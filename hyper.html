@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tutorial</title>
+
+    <style>
+      /* General styles */
+      body {
+        background-color: rgb(238, 232, 232);
+        color: rgb(0, 0, 0);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #0a0a0a;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+      }
+
+      .content {
+        padding-top: 150px; /* Avoid overlap with header */
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Accordion styles */
+      details {
+        margin-bottom: 10px;
+        background-color: #333; /* Dark gray for accordion sections */
+        border: 1px solid #444;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      details summary h2 {
+        display: inline;
+        font-size: 1.25em;
+        margin: 0;
+      }
+
+      details p {
+        margin: 10px 0;
+      }
+
+      h1,
+      h2 {
+        color: #fcfc0f; /* Highlight headers with green */
+      }
+
+      .p {
+        color: rgb(7, 7, 7);
+      }
+      ul,
+      li {
+        line-height: 1.6;
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid #555;
+        margin: 20px 0;
+      }
+    
+      ul,
+      li {
+        color: rgb(255, 255, 255);
+        line-height: 1.6;
+      }
+
+      
+      details p {
+        color: white;
+      }
+
+      
+      .content,
+      .content * {
+        color: rgb(14, 13, 13);
+        font-size: 30px;
+      }
+
+      .content2,
+      .content2 * {
+        color: rgb(14, 13, 13);
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+        <a href="index.html" class="home-button">
+            <img src="homie.png"  width="50" height="50">
+        </a>
+      <h1>HTML Tutorial</h1>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h2>What is HTML?</h2>
+    </div>
+   
+      HTML stands for Hyper Text Markup Language<br>
+      HTML is the standard markup language for creating Web pages<br>
+      HTML describes the structure of a Web page<br>
+    HTML consists of a series of elements<br>
+      HTML elements tell the browser how to display the content<br>
+      
+        HTML elements label pieces of content such as "this is a heading", "this
+        is a paragraph", "this is a link", etc.
+      
+    <hr />
+
+    <div class="content2">
+      <h1>Learn HTML!</h1></div>
+
+      <!-- Accordion Section 1 -->
+      <details>
+        <summary><h2>Introduction to HTML</h2></summary>
+         <center><h1><span style="color: white;">Introduction to HTML</span></h1></center> 
+          <p><span style="color: white;"><strong>What is HTML?</strong></span></p>
+          <p>
+              <span style="color: white;">
+                  HTML stands for <strong>HyperText Markup Language</strong>. It is the standard language used to create web pages and web applications. HTML structures the content on the web, using elements that define the different parts of a webpage, such as headings, paragraphs, links, and images.
+              </span>
+          </p>
+          <p><span style="color: white;"><strong>Breaking down the name:</strong></span></p>
+          <ul>
+              <li><span style="color: white;"><strong>HyperText:</strong> Refers to the links between web pages, enabling navigation across the internet.</span></li>
+              <li><span style="color: white;"><strong>Markup:</strong> Refers to the way HTML tags structure and define content.</span></li>
+              <li><span style="color: white;"><strong>Language:</strong> Indicates that HTML has a specific syntax or set of rules to follow.</span></li>
+          </ul>
+          <p><span style="color: white;"><strong>Importance of HTML:</strong></span></p>
+          <p>
+              <span style="color: white;">
+                  HTML is essential because it:
+                  <ul>
+                      <li><span style="color: white;">Provides the structure for all websites.</span></li>
+                      <li><span style="color: white;">Is easy to learn and use.</span></li>
+                      <li><span style="color: white;">Works in combination with CSS (for styling) and JavaScript (for functionality) to create dynamic web pages.</span></li>
+                  </ul>
+              </span>
+          </p>
+          <p><span style="color: white;"><strong>Basic Structure of an HTML Document:</strong></span></p>
+          <p><span style="color: white;">Below is an example of a simple HTML document:</span></p>
+          <pre>
+  <span style="color: white;">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+      &lt;head&gt;
+          &lt;title&gt;My First HTML Page&lt;/title&gt;
+      &lt;/head&gt;
+      &lt;body&gt;
+          &lt;h1&gt;Welcome to HTML!&lt;/h1&gt;
+          &lt;p&gt;HTML is easy and fun to learn.&lt;/p&gt;
+      &lt;/body&gt;
+  &lt;/html&gt;</span>
+          </pre>
+          <p><span style="color: white;"><strong>Explanation:</strong></span></p>
+          <ul>
+              <li><span style="color: white;"><strong>&lt;!DOCTYPE html&gt;:</strong> Declares the document type as HTML5.</span></li>
+              <li><span style="color: white;"><strong>&lt;html&gt;:</strong> The root element of the document.</span></li>
+              <li><span style="color: white;"><strong>&lt;head&gt;:</strong> Contains metadata about the document, such as its title.</span></li>
+              <li><span style="color: white;"><strong>&lt;title&gt;:</strong> Specifies the title that appears on the browser tab.</span></li>
+              <li><span style="color: white;"><strong>&lt;body&gt;:</strong> Contains the visible content of the webpage.</span></li>
+              <li><span style="color: white;"><strong>&lt;h1&gt;:</strong> A heading element, used for the main title.</span></li>
+              <li><span style="color: white;"><strong>&lt;p&gt;:</strong> A paragraph element for textual content.</span></li>
+          </ul>
+      
+      </details>
+
+      <!-- Accordion Section 2 -->
+      <details>
+        <summary><h2>Basic HTML tags</h2></summary>
+        <p>
+          <span style="color: white;">
+              HTML tags are the building blocks of web pages. Tags are used to define the structure and content of a webpage. They are enclosed within angle brackets <strong>(e.g., &lt;tag&gt;)</strong>. Most HTML tags come in pairs, consisting of an opening tag and a closing tag <strong>(e.g., &lt;p&gt;...&lt;/p&gt;)</strong>.
+          </span>
+      </p>
+      <p><span style="color: white;"><strong>Essential HTML Tags:</strong></span></p>
+      <ul>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;html&gt;:</strong> Represents the root of an HTML document. It contains all the content of the webpage.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;head&gt;:</strong> Contains metadata about the document, such as its title, character set, and linked resources like stylesheets.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;title&gt;:</strong> Specifies the title of the document, displayed on the browser tab.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;body&gt;:</strong> Defines the main content area of the document that is visible to users.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;h1&gt; to &lt;h6&gt;:</strong> Represent headings, with &lt;h1&gt; being the largest and &lt;h6&gt; the smallest.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;p&gt;:</strong> Defines a paragraph of text.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;a&gt;:</strong> Creates hyperlinks to navigate between web pages.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;img&gt;:</strong> Embeds images into a webpage. It is a self-closing tag.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;ul&gt; and &lt;ol&gt;:</strong> Represent unordered and ordered lists, respectively.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;li&gt;:</strong> Defines a list item inside &lt;ul&gt; or &lt;ol&gt;.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;div&gt;:</strong> Defines a division or section in a document, often used for grouping elements.
+              </span>
+          </li>
+          <li>
+              <span style="color: white;">
+                  <strong>&lt;span&gt;:</strong> Used for styling inline elements without creating a new block.
+              </span>
+          </li>
+      </ul>
+      <p><span style="color: white;"><strong>Example of Basic HTML Tags:</strong></span></p>
+      <pre>
+<span style="color: white;">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+      &lt;title&gt;My First HTML Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+      &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+      &lt;a href="https://www.example.com"&gt;Visit Example.com&lt;/a&gt;
+      &lt;img src="image.jpg" alt="Sample Image"&gt;
+      &lt;ul&gt;
+          &lt;li&gt;Item 1&lt;/li&gt;
+          &lt;li&gt;Item 2&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</span>
+      </pre>
+      <p><span style="color: white;"><strong>Explanation:</strong></span></p>
+      <ul>
+          <li><span style="color: white;"><strong>&lt;h1&gt;:</strong> Adds a main heading to the webpage.</span></li>
+          <li><span style="color: white;"><strong>&lt;p&gt;:</strong> Adds a paragraph with descriptive text.</span></li>
+          <li><span style="color: white;"><strong>&lt;a&gt;:</strong> Creates a clickable hyperlink.</span></li>
+          <li><span style="color: white;"><strong>&lt;img&gt;:</strong> Embeds an image.</span></li>
+          <li><span style="color: white;"><strong>&lt;ul&gt; and &lt;li&gt;:</strong> Create a list of items.</span></li>
+      </ul>
+      </details>
+
+      <!-- Accordion Section 3 -->
+      <details>
+        <summary><h2>HTML Text Formatting</h2></summary>
+       <center> <h1><span style="color: white;">HTML Tutorial: Text Formatting</span></h1>
+        <p><span style="color: white;">Basic text formatting tags in HTML. These tags help you style your text in various ways.</span></p>
+        
+        <h2><span style="color: white;">1. Bold Text</span></h2>
+        <p><span style="color: white;">To make your text bold, use the <code>&lt;b&gt;</code> or <code>&lt;strong&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;b&gt;This is bold text&lt;/b&gt;</code></span></p>
+    
+        <h2><span style="color: white;">2. Italic Text</span></h2>
+        <p><span style="color: white;">To italicize your text, use the <code>&lt;i&gt;</code> or <code>&lt;em&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;i&gt;This is italic text&lt;/i&gt;</code></span></p>
+    
+        <h2><span style="color: white;">3. Underlined Text</span></h2>
+        <p><span style="color: white;">To underline your text, use the <code>&lt;u&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;u&gt;This is underlined text&lt;/u&gt;</code></span></p>
+    
+        <h2><span style="color: white;">4. Strikethrough Text</span></h2>
+        <p><span style="color: white;">To add a strikethrough effect, use the <code>&lt;s&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;s&gt;This is strikethrough text&lt;/s&gt;</code></span></p>
+    
+        <h2><span style="color: white;">5. Subscript Text</span></h2>
+        <p><span style="color: white;">To write subscript text, use the <code>&lt;sub&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;sub&gt;H&lt;sub&gt;2&lt;/sub&gt;O&lt;/sub&gt;</code></span></p>
+    
+        <h2><span style="color: white;">6. Superscript Text</span></h2>
+        <p><span style="color: white;">To write superscript text, use the <code>&lt;sup&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;sup&gt;x&lt;sup&gt;2&lt;/sup&gt;&lt;/sup&gt;</code></span></p>
+    
+        <h2><span style="color: white;">7. Monospace Text</span></h2>
+        <p><span style="color: white;">To display text in a monospace font, use the <code>&lt;code&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;code&gt;This is code text&lt;/code&gt;</code></span></p>
+    
+        <h2><span style="color: white;">8. Highlighted Text</span></h2>
+        <p><span style="color: white;">To highlight text, use the <code>&lt;mark&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;mark&gt;This is highlighted text&lt;/mark&gt;</code></span></p>
+    
+        <h2><span style="color: white;">9. Inserted Text</span></h2>
+        <p><span style="color: white;">To indicate inserted text, use the <code>&lt;ins&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;ins&gt;This is inserted text&lt;/ins&gt;</code></span></p>
+    
+        <h2><span style="color: white;">10. Deleted Text</span></h2>
+        <p><span style="color: white;">To indicate deleted text, use the <code>&lt;del&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;del&gt;This is deleted text&lt;/del&gt;</code></span></p>
+    
+        <h2><span style="color: white;">11. Quoted Text</span></h2>
+        <p><span style="color: white;">To display short inline quotations, use the <code>&lt;q&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;q&gt;This is quoted text&lt;/q&gt;</code></span></p>
+    
+        <h2><span style="color: white;">12. Blockquote</span></h2>
+        <p><span style="color: white;">To display longer quotations, use the <code>&lt;blockquote&gt;</code> tag.</span></p>
+        <p><span style="color: white;">Example: <code>&lt;blockquote&gt;This is a blockquote&lt;/blockquote&gt;</code></span></p>
+
+      </details>
+
+ <!-- Accordion Section 4 -->
+      <details>
+  <summary><h2>Links, Images, and Buttons</h2></summary>
+  <h1 style="color: white;">Links, Images, and Buttons</h1>
+
+  <!-- Links Section -->
+  <p><span style="color: white;">Links</span> are created using the <span style="color: white;">&lt;a&gt;</span> tag. Here's the basic syntax:</p>
+  <p>
+      <span style="color: white;">&lt;a href="URL"&gt;Link Text&lt;/a&gt;</span>
+  </p>
+  <p>
+      For example, to create a link to Google:
+  </p>
+  <p>
+      <span style="color: white;">&lt;a href="https://www.google.com"&gt;Visit Google&lt;/a&gt;</span>
+  </p>
+
+  <hr style="border: 1px solid white;">
+
+  <!-- Images Section -->
+  <p><span style="color: white;">Images</span> are added using the <span style="color: white;">&lt;img&gt;</span> tag. Here's the basic syntax:</p>
+  <p>
+      <span style="color: white;">&lt;img src="IMAGE_URL" alt="Description" /&gt;</span>
+  </p>
+  <p>
+      For example, to display an image of a cat:
+  </p>
+  <p>
+      <span style="color: white;">&lt;img src="cat.jpg" alt="A cute cat" /&gt;</span>
+  </p>
+
+  <hr style="border: 1px solid white;">
+
+  <!-- Buttons Section -->
+  <p><span style="color: white;">Buttons</span> are created using the <span style="color: white;">&lt;button&gt;</span> tag. Buttons are used for actions like submitting forms or triggering JavaScript functions. Here's the basic syntax:</p>
+  <p>
+      <span style="color: white;">&lt;button&gt;Button Text&lt;/button&gt;</span>
+  </p>
+  <p>
+      For example, to create a button labeled "Click Me!":
+  </p>
+  <p>
+      <span style="color: white;">&lt;button&gt;Click Me!&lt;/button&gt;</span>
+  </p>
+  <p>
+      You can also add attributes like <span style="color: white;">onclick</span> to make the button interactive. For example:
+  </p>
+  <p>
+      <span style="color: white;">&lt;button onclick="alert('Hello!')"&gt;Say Hello&lt;/button&gt;</span>
+  </p>
+
+  <hr style="border: 1px solid white;">
+
+  <!-- Summary -->
+  <p>Now you know how to add <span style="color: white;">links</span>, <span style="color: white;">images</span>, and <span style="color: white;">buttons</span> to your HTML page. Try experimenting with these elements to make your web pages more interactive and visually appealing!</p>
+</center>
+      </details>
+
+
+       <!-- Accordion Section 4 -->
+       <details>
+        <summary><h2>Lists</h2></summary>
+        <p><h1><span style="color: white;">HTML Lists </span></h1>
+          <p>
+              <span style="color: white;">HTML provides two main types of lists:</span>
+          </p>
+          <ul>
+              <li><span style="color: white;">Ordered Lists (&lt;ol&gt;)</span></li>
+              <li><span style="color: white;">Unordered Lists (&lt;ul&gt;)</span></li>
+          </ul>
+          <h2><span style="color: white;">Ordered Lists</span></h2>
+          <p>
+              <span style="color: white;">An ordered list is used when the order of items is important. Here's an example:</span>
+          </p>
+          <pre>
+              <span style="color: white;">&lt;ol&gt;</span>
+              <span style="color: white;">    &lt;li&gt;First item&lt;/li&gt;</span>
+              <span style="color: white;">    &lt;li&gt;Second item&lt;/li&gt;</span>
+              <span style="color: white;">    &lt;li&gt;Third item&lt;/li&gt;</span>
+              <span style="color: white;">&lt;/ol&gt;</span>
+          </pre>
+          <h2><span style="color: white;">Unordered Lists</span></h2>
+          <p>
+              <span style="color: white;">An unordered list is used when the order of items is not important. Here's an example:</span>
+          </p>
+          <pre>
+              <span style="color: white;">&lt;ul&gt;</span>
+              <span style="color: white;">    &lt;li&gt;Item one&lt;/li&gt;</span>
+              <span style="color: white;">    &lt;li&gt;Item two&lt;/li&gt;</span>
+              <span style="color: white;">    &lt;li&gt;Item three&lt;/li&gt;</span>
+              <span style="color: white;">&lt;/ul&gt;</span>
+          </pre>
+          <p>
+              <span style="color: white;">Lists can also be nested for creating sub-lists:</span>
+          </p>
+          <pre>
+              <span style="color: white;">&lt;ul&gt;</span>
+              <span style="color: white;">    &lt;li&gt;Main item&lt;/li&gt;</span>
+              <span style="color: white;">    &lt;ul&gt;</span>
+              <span style="color: white;">        &lt;li&gt;Sub-item 1&lt;/li&gt;</span>
+              <span style="color: white;">        &lt;li&gt;Sub-item 2&lt;/li&gt;</span>
+              <span style="color: white;">    &lt;/ul&gt;</span>
+              <span style="color: white;">&lt;/ul&gt;</span>
+          </pre>
+          
+      </body></p>
+            </details>
+
+
+
+             <!-- Accordion Section 4 -->
+      <details>
+        <summary><h2> Table</h2></summary>
+       <center> <h1><span style="color: white;">HTML Table Tutorial</span></h1>
+
+<p><span style="color: white;">Tables are used to organize data in rows and columns. Here's an example of how to create a basic table in HTML.</span></p>
+
+<h2><span style="color: white;">HTML Code</span></h2>
+
+<pre><span style="color: white;">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Header 1&lt;/th&gt;
+        &lt;th&gt;Header 2&lt;/th&gt;
+        &lt;th&gt;Header 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 1&lt;/td&gt;
+        &lt;td&gt;Data 2&lt;/td&gt;
+        &lt;td&gt;Data 3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Data 4&lt;/td&gt;
+        &lt;td&gt;Data 5&lt;/td&gt;
+        &lt;td&gt;Data 6&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</span></pre>
+
+<h2><span style="color: white;">Output</span></h2>
+
+<p><span style="color: white;">This code will produce the following table:</span></p>
+
+<table border="1" style="color: white;">
+    <tr>
+        <th><span style="color: white;">Header 1</span></th>
+        <th><span style="color: white;">Header 2</span></th>
+        <th><span style="color: white;">Header 3</span></th>
+    </tr>
+    <tr>
+        <td><span style="color: white;">Data 1</span></td>
+        <td><span style="color: white;">Data 2</span></td>
+        <td><span style="color: white;">Data 3</span></td>
+    </tr>
+    <tr>
+        <td><span style="color: white;">Data 4</span></td>
+        <td><span style="color: white;">Data 5</span></td>
+        <td><span style="color: white;">Data 6</span></td>
+    </tr>
+</table>
+
+<p><span style="color: white;">The table is structured as follows:</span></p>
+<ul>
+    <li><span style="color: white;">&lt;table&gt;: Defines the table.</span></li>
+    <li><span style="color: white;">&lt;tr&gt;: Defines a row.</span></li>
+    <li><span style="color: white;">&lt;th&gt;: Defines a header cell.</span></li>
+    <li><span style="color: white;">&lt;td&gt;: Defines a data cell.</span></li>
+</ul>
+
+<p><span style="color: white;">Use this structure to create your own tables in HTML!</span></p>
+</center>
+            </details>
+
+
+             <!-- Accordion Section 4 -->
+             <details>
+              <summary><h2>Forms and Input</h2></summary>
+           <center>  <h1><span style="color: white;">HTML Tutorial: Forms and Inputs</span></h1>
+
+              <p><span style="color: white;">In this tutorial, we will learn how to create forms and inputs in HTML.</span></p>
+          
+              <h2><span style="color: white;">1. Basic Form Structure</span></h2>
+              <p><span style="color: white;">To create a form, use the <span>&lt;form&gt;</span> tag. Here's an example:</span></p>
+          
+              <pre><span style="color: white;">&lt;form action="submit_form.php" method="post"&gt;
+              &lt;!-- Form content goes here --&gt;
+          &lt;/form&gt;</span></pre>
+          
+              <h2><span style="color: white;">2. Adding Input Fields</span></h2>
+              <p><span style="color: white;">Input fields are added using the <span>&lt;input&gt;</span> tag. Common types of input fields include text, email, password, and submit. Here's an example:</span></p>
+          
+              <pre><span style="color: white;">&lt;form action="submit_form.php" method="post"&gt;
+              &lt;label for="name"&gt;Name:&lt;/label&gt;
+              &lt;input type="text" id="name" name="name"&gt;
+              &lt;br&gt;
+              &lt;label for="email"&gt;Email:&lt;/label&gt;
+              &lt;input type="email" id="email" name="email"&gt;
+              &lt;br&gt;
+              &lt;label for="password"&gt;Password:&lt;/label&gt;
+              &lt;input type="password" id="password" name="password"&gt;
+              &lt;br&gt;
+              &lt;input type="submit" value="Submit"&gt;
+          &lt;/form&gt;</span></pre>
+          
+              <h2><span style="color: white;">3. Adding Labels</span></h2>
+              <p><span style="color: white;">Labels make forms more accessible. Use the <span>&lt;label&gt;</span> tag to associate a label with an input field. Example:</span></p>
+          
+              <pre><span style="color: white;">&lt;label for="username"&gt;Username:&lt;/label&gt;
+          &lt;input type="text" id="username" name="username"&gt;</span></pre>
+          
+              <h2><span style="color: white;">4. Example: Complete Form</span></h2>
+              <p><span style="color: white;">Below is an example of a complete form:</span></p>
+          
+              <pre><span style="color: white;">&lt;form action="submit_form.php" method="post"&gt;
+              &lt;label for="firstName"&gt;First Name:&lt;/label&gt;
+              &lt;input type="text" id="firstName" name="firstName"&gt;
+              &lt;br&gt;
+              &lt;label for="lastName"&gt;Last Name:&lt;/label&gt;
+              &lt;input type="text" id="lastName" name="lastName"&gt;
+              &lt;br&gt;
+              &lt;label for="emailAddress"&gt;Email:&lt;/label&gt;
+              &lt;input type="email" id="emailAddress" name="emailAddress"&gt;
+              &lt;br&gt;
+              &lt;input type="submit" value="Register"&gt;
+          &lt;/form&gt;</span></pre>
+          
+              
+            </center> 
+                  </details>
+
+ <!-- Accordion Section 4 -->
+ <details>
+  <summary><h2>Multimedia in HTML</h2></summary>
+  <center><h1><span style="color: white;">HTML Multimedia Tutorial</span></h1>
+
+  <p><span style="color: white;">HTML allows you to integrate multimedia elements such as audio, video, and images to create engaging content for users.</span></p>
+
+  <h2><span style="color: white;">1. Adding Audio</span></h2>
+  <p><span style="color: white;">To add an audio file in HTML, use the <code>&lt;audio&gt;</code> tag.</span></p>
+  <pre><span style="color: white;">&lt;audio controls&gt;
+  &lt;source src="example.mp3" type="audio/mpeg"&gt;
+  Your browser does not support the audio element.
+&lt;/audio&gt;</span></pre>
+
+  <h2><span style="color: white;">2. Adding Video</span></h2>
+  <p><span style="color: white;">To embed a video in your webpage, use the <code>&lt;video&gt;</code> tag.</span></p>
+  <pre><span style="color: white;">&lt;video controls width="600"&gt;
+  &lt;source src="example.mp4" type="video/mp4"&gt;
+  Your browser does not support the video element.
+&lt;/video&gt;</span></pre>
+
+  <h2><span style="color: white;">3. Embedding Images</span></h2>
+  <p><span style="color: white;">Images can be added using the <code>&lt;img&gt;</code> tag with the <code>src</code> attribute for the image path and <code>alt</code> text for accessibility.</span></p>
+  <pre><span style="color: white;">&lt;img src="example.jpg" alt="Example Image" width="600"&gt;</span></pre>
+
+  
+  <p><span style="color: white;">Multimedia elements in HTML enrich the user experience and make your website more interactive.</span></p>
+
+  <p><span style="color: white;">Practice using these tags and explore their attributes to customize your multimedia content.</span></p>
+</center>
+      </details>
+
+ <!-- Accordion Section 4 -->
+ <details>
+  <summary><h2>Colors, Background and Size</h2></summary>
+   
+  <center><h1 style="color: white;">: Colors, Background, and Size</h1>
+
+    <p>
+        In HTML, you can customize the <span style="color: white;">colors</span>, 
+        <span style="color: white;">backgrounds</span>, and <span style="color: white;">sizes</span> of elements easily using attributes.
+    </p>
+
+    <h2 style="color: white;">1. Colors</h2>
+    <p>
+        To set a color, use the <span style="color: white;">style</span> attribute with the 
+        <span style="color: white;">color</span> property:
+    </p>
+    <pre style="background-color: black; color: white;">
+        &lt;p style="color: red;"&gt;This is red text.&lt;/p&gt;
+    </pre>
+
+    <h2 style="color: white;">2. Background</h2>
+    <p>
+        To set a background color, use the <span style="color: white;">style</span> attribute with the 
+        <span style="color: white;">background-color</span> property:
+    </p>
+    <pre style="background-color: black; color: white;">
+        &lt;div style="background-color: yellow;"&gt;This has a yellow background.&lt;/div&gt;
+    </pre>
+
+    <h2 style="color: white;">3. Size</h2>
+    <p>
+        To set the size of an element, use the <span style="color: white;">style</span> attribute with 
+        properties like <span style="color: white;">font-size</span> (for text size) or 
+        <span style="color: white;">width</span> and <span style="color: white;">height</span>:
+    </p>
+    <pre style="background-color: black; color: white;">
+        &lt;p style="font-size: 20px;"&gt;This text is 20px in size.&lt;/p&gt;
+        &lt;div style="width: 100px; height: 50px; background-color: blue;"&gt;&lt;/div&gt;
+    </pre>
+
+    <h2 style="color: white;">Example</h2>
+    <pre style="background-color: black; color: white;">
+        &lt;div style="color: white; background-color: black; font-size: 16px;"&gt;
+            Hello, this is an example of text with custom colors, background, and size!
+        &lt;/div&gt;
+    </pre>
+    </center>
+      </details>
+
+
+  <!-- Accordion Section 4 -->
+  <details>
+    <summary><h2>Div and Classes</h2></summary>
+   <center>
+    <span style="color: white;">
+      &lt;div&gt; Tag:
+  </span><br>
+  <span style="color: white;">
+      The &lt;div&gt; tag is a block-level element in HTML used to group content together for styling, layout, or scripting purposes. It doesn't have any inherent style, but you can apply styles or functions to it using CSS or JavaScript.
+  </span><br><br>
+
+  <span style="color: white;">
+      Example:
+  </span><br>
+  <span style="color: white;">
+      &lt;div&gt;
+  </span><br>
+  <span style="color: white;">
+      &nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph inside a div element.&lt;/p&gt;
+  </span><br>
+  <span style="color: white;">
+      &lt;/div&gt;
+  </span><br><br>
+
+  <span style="color: white;">
+      This code will create a container &lt;div&gt; around the paragraph, but visually, it won't make a difference unless we add styles like margins, padding, or background color. The real power of the &lt;div&gt; tag is in its ability to structure the page.
+  </span><br><br>
+
+  <span style="color: white;">
+      <strong>When to use &lt;div&gt;:</strong>
+  </span><br>
+  <span style="color: white;">
+      The &lt;div&gt; tag is ideal for grouping elements like text, images, or even other containers. It's commonly used in layouts, especially when you're building a web page with multiple sections.
+  </span><br><br>
+
+  <span style="color: white;">
+      Classes:
+  </span><br>
+  <span style="color: white;">
+      A class is an attribute you can assign to HTML elements to group them and apply the same styles or JavaScript functions. Unlike the &lt;div&gt; tag, which is just a container, classes allow you to identify and manipulate multiple elements at once using CSS or JavaScript.
+  </span><br><br>
+
+  <span style="color: white;">
+      Example:
+  </span><br>
+  <span style="color: white;">
+      &lt;div class="example-class"&gt;
+  </span><br>
+  <span style="color: white;">
+      &nbsp;&nbsp;&nbsp;&lt;p&gt;This is a paragraph inside a div with a class.&lt;/p&gt;
+  </span><br>
+  <span style="color: white;">
+      &lt;/div&gt;
+  </span><br><br>
+
+  <span style="color: white;">
+      In this example, the &lt;div&gt; has the class "example-class". This class can be used to target the element with CSS or JavaScript. For instance, if you want to change the background color of all elements with the "example-class", you can use:
+  </span><br>
+  <span style="color: white;">
+      &lt;style&gt;<br>
+      &nbsp;&nbsp;.example-class {<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;background-color: lightblue;<br>
+      &nbsp;&nbsp;}<br>
+      &lt;/style&gt;
+  </span><br><br>
+
+  <span style="color: white;">
+      <strong>Multiple Classes:</strong>
+  </span><br>
+  <span style="color: white;">
+      You can assign multiple classes to an element by separating them with a space. This allows you to combine different styles or behaviors. For example:
+  </span><br>
+  <span style="color: white;">
+      &lt;div class="class-one class-two"&gt;
+  </span><br>
+  <span style="color: white;">
+      &nbsp;&nbsp;&nbsp;&lt;p&gt;This div has two classes: "class-one" and "class-two".&lt;/p&gt;
+  </span><br>
+  <span style="color: white;">
+      &lt;/div&gt;
+  </span><br><br>
+
+  <span style="color: white;">
+      <strong>Why Use Classes?</strong>
+  </span><br>
+  <span style="color: white;">
+      Classes allow you to apply common styling or behaviors to multiple elements without affecting other elements on the page. You can have different classes for colors, fonts, layouts, or animations. It's an efficient way to manage styles across large projects.
+  </span><br><br>
+
+  <span style="color: white;">
+      <strong>More Examples:</strong>
+  </span><br>
+  <span style="color: white;">
+      Here's how classes can be used for styling purposes:<br>
+      &lt;div class="container"&gt;<br>
+      &nbsp;&nbsp;&nbsp;&lt;div class="header"&gt;Header Content&lt;/div&gt;<br>
+      &nbsp;&nbsp;&nbsp;&lt;div class="content"&gt;Main Content&lt;/div&gt;<br>
+      &nbsp;&nbsp;&nbsp;&lt;div class="footer"&gt;Footer Content&lt;/div&gt;<br>
+      &lt;/div&gt;<br><br>
+
+      In this example, "container", "header", "content", and "footer" are different classes that can be styled separately to create a webpage layout.
+  </span><br><br>
+
+  <span style="color: white;">
+     Now you understand how to use the &lt;div&gt; tag for grouping content and how to use classes to apply styling or behavior to elements.
+  </span><br>
+  </center>
+  </details>
+
+  <h3>for more knowledge abot HTML you may continue to watch/ practice on:</h3></div>
+  <center>
+  <table>
+    <table border = "1">
+    <tr>
+    
+      <th> Main Site</video></th>
+      <th>Youtube</th>
+    </tr>
+    <tr>
+    <td> <a href="https://www.w3schools.com/html/default.asp">
+        <img src="w3.png"  style="width:250px;height:300px;">
+     </a></td>
+    <td>  <a href="https://www.youtube.com/watch?v=it1rTvBcfRg&list=PLP9IO4UYNF0VdAajP_5pYG-jG2JRrG72s">
+        <img src="YT.png"  style="width:250px;height:300px;">
+     </a></td>
+    
+    </tr>
+    </table>
+
+</center>
+
+
+
+
+
+    </div>
+  </body>
+</html>

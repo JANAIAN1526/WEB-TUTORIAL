@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tutorial</title>
+
+    <style>
+      
+      body {
+        background-color: rgb(238, 232, 232);
+        color: rgb(0, 0, 0);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #0a0a0a;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+      }
+
+      .content {
+        padding-top: 150px; 
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Accordion styles */
+      details {
+        margin-bottom: 10px;
+        background-color: #333; /* Dark gray for accordion sections */
+        border: 1px solid #444;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      details summary h2 {
+        display: inline;
+        font-size: 1.25em;
+        margin: 0;
+      }
+
+      details p {
+        margin: 10px 0;
+      }
+
+      h1,
+      h2 {
+        color: #fcfc0f; /* Highlight headers with green */
+      }
+
+      .p {
+        color: rgb(7, 7, 7);
+      }
+      ul,
+      li {
+        line-height: 1.6;
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid #555;
+        margin: 20px 0;
+      }
+      /* Target unordered list and its list items */
+      ul,
+      li {
+        color: rgb(247, 239, 239);
+        line-height: 1.6;
+      }
+
+      
+      details p {
+        color: white;
+      }
+
+      
+      .content,
+      .content * {
+        color: rgb(14, 13, 13);
+        font-size: 30px;
+      }
+
+      .content2,
+      .content2 * {
+        color: rgb(14, 13, 13);
+        font-size: 30px;
+      }
+      
+          ul{
+          color: rgb(241,238,238);
+          }
+          
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <a href="index.html" class="home-button">
+        <img src="homie.png"  width="50" height="50">
+    </a>
+      <h1>CSS Tutorial</h1>
+      
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h2>What is CSS?</h2>
+    </div>
+    
+      CSS is the language we use to style an HTML document.<BR>
+      CSS describes how HTML elements should be displayed.<BR>
+      This tutorial will teach you CSS from basic to advanced.<BR>
+    
+    <hr />
+
+    <div class="content2">
+      <h1>Learn CSS!</h1></div>
+
+      <!-- Accordion Section 1 -->
+      <details>
+        <summary><h2>Introduction to CSS</h2></summary>
+        <span style="color: white;">
+            <h1 style="text-align: center;">Introduction to CSS</h1>
+            <p>CSS, which stands for <span style="background-color: #ff5733; padding: 5px;">Cascading Style Sheets</span>, is a powerful tool used to control the layout and appearance of web pages. It allows you to apply styles such as colors, fonts, and spacing to HTML elements, making websites more visually appealing and easier to navigate.</p>
+        
+            <p>By using <span style="background-color: #ff5733; padding: 5px;">CSS</span>, you can control the <span style="background-color: #ff5733; padding: 5px;">presentation</span> of your content. It separates the structure (HTML) from the styling (CSS), making web development more organized and efficient.</p>
+        
+            <p>CSS can be added to HTML in three ways:
+              <ul style="color: white;">
+                <li>Inline: Using the style attribute directly in an HTML element.</li>
+                <li>Internal: By placing CSS inside a <code>&lt;style&gt;</code> tag in the <code>&lt;head&gt;</code> section.</li>
+                <li>External: By linking to an external stylesheet using the <code>&lt;link&gt;</code> tag.</li>
+              </ul>
+            </p>
+        
+            <h2>CSS Code Examples</h2>
+            <p>Here are some examples of how to add CSS to an HTML document:</p>
+        
+            <h3>Inline CSS</h3>
+            <pre><code>&lt;div style="color: blue; background-color: yellow;"&gt;This is an inline styled div.&lt;/div&gt;</code></pre>
+        
+            <h3>Internal CSS</h3>
+            <pre><code>&lt;style&gt;
+          body {
+            background-color: #282c34;
+            color: white;
+          }
+          h1 {
+            text-align: center;
+          }
+        &lt;/style&gt;</code></pre>
+        
+            <h3>External CSS</h3>
+            <pre><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></pre>
+        
+            <p>In the examples above, you can see how different methods are used to apply CSS styles to HTML elements.</p>
+          </span>
+      </details>
+
+      <!-- Accordion Section 2 -->
+      <details>
+        <summary><h2> CSS Syntax and Selectors</h2></summary>
+<center>
+            <p>This tutorial explains the basic CSS syntax and how selectors work:</p>
+        
+            <h2>1. CSS Syntax</h2>
+            <p><strong>CSS Syntax</strong> consists of a <span>selector</span> and a <span>declaration block</span>.</p>
+            <p>Example of applying styles to <span>span elements</span> in white.</p>
+        
+            <h2>2. Selectors</h2>
+            <p><strong>Class selector</strong> (using .example-class): 
+                <span class="example-class">This text uses a class selector.</span>
+            </p>
+            
+            <p><strong>ID selector</strong> (using #example-id): 
+                <span id="example-id">This text uses an ID selector.</span>
+            </p>
+        
+            <p><strong>Element selector</strong> (using span): 
+                <span>This is a span element.</span>
+              </center>
+            </p></h2></summary>
+       
+      </details>
+
+      <!-- Accordion Section 3 -->
+      <details>
+        <summary><h2>CSS Colors and Fonts </h2></summary>
+        <center><P><h1> Colors and Fonts</h1>
+         
+      
+          <h1>CSS Tutorial: Colors and Fonts</h1>
+          <p>This tutorial covers:</p>
+          <ul>
+              <li><span style="color: white;">How to use colors in CSS (hex, rgb, rgba, hsl).</span></li>
+              <li><span style="color: white;">Text styling properties like alignment, decoration, and transformation.</span></li>
+              <li><span style="color: white;">Font customization including size, style, and weight.</span></li>
+          </ul>
+      
+          <!-- Displaying CSS as raw code -->
+          <h2>1. Colors in CSS</h2>
+          <p>CSS provides several ways to specify colors:</p>
+          <pre style="background-color: #333; padding: 15px; border-radius: 8px; color: white;">
+              <code>
+      <span style="color: white;">/* Hexadecimal color example */</span>
+      <span style="color: white;">p {</span>
+      <span style="color: white;">    color: #ff5733; /* Sets text color to a bright orange */</span>
+      <span style="color: white;">}</span>
+      
+      <span style="color: white;">/* RGB color example */</span>
+      <span style="color: white;">p {</span>
+      <span style="color: white;">    color: rgb(255, 87, 51); /* Same as #ff5733 in RGB format */</span>
+      <span style="color: white;">}</span>
+      
+      <span style="color: white;">/* RGBA color example */</span>
+      <span style="color: white;">p {</span>
+      <span style="color: white;">    color: rgba(255, 87, 51, 0.5); /* Same as above, but with 50% transparency */</span>
+      <span style="color: white;">}</span>
+      
+      <span style="color: white;">/* HSL color example */</span>
+      <span style="color: white;">p {</span>
+      <span style="color: white;">    color: hsl(14, 100%, 60%); /* Defines color using hue, saturation, and lightness */</span>
+      <span style="color: white;">}</span>
+              </code>
+          </pre>
+      
+          <h2>2. Text Styling</h2>
+          <p>Common text styling properties in CSS:</p>
+          <pre style="background-color: #333; padding: 15px; border-radius: 8px; color: white;">
+              <code>
+      <span style="color: white;">p {</span>
+      <span style="color: white;">    text-align: center; /* Aligns text to the center */</span>
+      <span style="color: white;">    text-decoration: underline; /* Adds an underline to the text */</span>
+      <span style="color: white;">    text-transform: uppercase; /* Converts text to uppercase */</span>
+      <span style="color: white;">}</span>
+              </code>
+          </pre>
+      
+          <h2>3. Font Customization</h2>
+          <p>CSS allows you to control font appearance with the following properties:</p>
+          <pre style="background-color: #333; padding: 15px; border-radius: 8px; color: white;">
+              <code>
+      <span style="color: white;">p {</span>
+      <span style="color: white;">    font-size: 20px; /* Sets the size of the font */</span>
+      <span style="color: white;">    font-weight: bold; /* Makes the font bold */</span>
+      <span style="color: white;">    font-style: italic; /* Italicizes the font */</span>
+      <span style="color: white;">    font-family: 'Times New Roman', serif; /* Uses Times New Roman as the primary font */</span>
+      <span style="color: white;">}</span>
+              </code>
+          </pre>
+      
+          <h2>Explanation of Code</h2>
+          <p>
+              <strong>Colors:</strong> 
+              <ul>
+                  <li><span style="color: white;">Hexadecimal colors (e.g., <code>#ff5733</code>) are defined using a six-digit code.</span></li>
+                  <li><span style="color: white;">RGB (e.g., <code>rgb(255, 87, 51)</code>) defines colors using red, green, and blue values.</span></li>
+                  <li><span style="color: white;">RGBA (e.g., <code>rgba(255, 87, 51, 0.5)</code>) adds an alpha channel for transparency.</span></li>
+                  <li><span style="color: white;">HSL (e.g., <code>hsl(14, 100%, 60%)</code>) uses hue, saturation, and lightness for color definition.</span></li>
+              </ul>
+              <strong>Text Styling:</strong>
+              <ul>
+                  <li><span style="color: white;"><code>text-align</code>: Aligns text (e.g., left, center, right).</span></li>
+                  <li><span style="color: white;"><code>text-decoration</code>: Adds effects like underline, line-through, or overline.</span></li>
+                  <li><span style="color: white;"><code>text-transform</code>: Converts text to uppercase, lowercase, or capitalized.</span></li>
+              </ul>
+              <strong>Font Customization:</strong>
+              <ul>
+                  <li><span style="color: white;"><code>font-size</code>: Specifies the size of text (e.g., 20px, 1.5em).</span></li>
+                  <li><span style="color: white;"><code>font-weight</code>: Controls the thickness of text (e.g., normal, bold, 700).</span></li>
+                  <li><span style="color: white;"><code>font-style</code>: Sets the text style (e.g., normal, italic, oblique).</span></li>
+                  <li><span style="color: white;"><code>font-family</code>: Defines the font type (e.g., Arial, serif).</span></li>
+              </ul>
+          </p>
+          </center>
+
+      </details>
+
+ <!-- Accordion Section 4 -->
+  <details>
+  <summary><h2>CSS Box</h2></summary>
+  <center><h1>CSS Tutorial: The Box Model</h1>
+    <p>The CSS Box Model is a fundamental concept in web design. It describes how elements are structured and spaced on a webpage.</p>
+
+    <h2>Structure of the Box Model</h2>
+    <p>The Box Model consists of:</p>
+    <ul>
+        <li><span style="color: white;">Content: The actual content inside the box, such as text or an image.</span></li>
+        <li><span style="color: white;">Padding: The space between the content and the border.</span></li>
+        <li><span style="color: white;">Border: The line surrounding the padding (or content if there's no padding).</span></li>
+        <li><span style="color: white;">Margin: The space outside the border, separating the element from other elements.</span></li>
+    </ul>
+
+    <h2>Box Model in Action</h2>
+    <p>Here’s an example of how the Box Model is defined in CSS:</p>
+    <pre style="background-color: #333; padding: 15px; border-radius: 8px; color: white;">
+        <code>
+<span style="color: white;">/* Example CSS for Box Model */</span>
+<span style="color: white;">div {</span>
+<span style="color: white;">    width: 200px; /* The width of the content area */</span>
+<span style="color: white;">    height: 100px; /* The height of the content area */</span>
+<span style="color: white;">    padding: 20px; /* Space between content and border */</span>
+<span style="color: white;">    border: 5px solid lightblue; /* A 5px wide border */</span>
+<span style="color: white;">    margin: 10px; /* Space outside the border */</span>
+<span style="color: white;">}</span>
+        </code>
+    </pre>
+
+    <h2>Explanation of Code</h2>
+    <ul>
+        <li>
+            <span style="color: white;"><strong>Content:</strong> The width and height properties define the size of the content area.</span>
+        </li>
+        <li>
+            <span style="color: white;"><strong>Padding:</strong> Adds 20px of space between the content and the border. This increases the total size of the element.</span>
+        </li>
+        <li>
+            <span style="color: white;"><strong>Border:</strong> A 5px solid border in light blue surrounds the padding and content.</span>
+        </li>
+        <li>
+            <span style="color: white;"><strong>Margin:</strong> Adds 10px of space outside the border, creating separation from other elements.</span>
+        </li>
+    </ul>
+
+    <h2>How the Box Model Affects Layout</h2>
+    <p>The total size of an element is calculated as:</p>
+    <p><span style="color: white;">Total Width = Content Width + Padding + Border + Margin</span></p>
+    <p><span style="color: white;">Total Height = Content Height + Padding + Border + Margin</span></p>
+    <p>In the above example, the total width of the box would be:</p>
+    <pre style="background-color: #333; padding: 15px; border-radius: 8px; color: white;">
+        <code>
+<span style="color: white;">200px (content width) + 20px (left padding) + 20px (right padding)</span>
+<span style="color: white;">+ 5px (left border) + 5px (right border) + 10px (left margin) + 10px (right margin)</span>
+<span style="color: white;">= 270px</span>
+        </code>
+    </pre>
+
+    <p>Similarly, the total height would be 150px.</p>
+
+    <h2>Visualization</h2>
+    <p>Imagine a box structured as follows:</p>
+    <pre style="background-color: #333; padding: 15px; border-radius: 8px; color: white;">
+        <code>
+<span style="color: white;">[ Margin ]</span>
+<span style="color: white;">  [ Border ]</span>
+<span style="color: white;">    [ Padding ]</span>
+<span style="color: white;">      [ Content ]</span>
+        </code>
+    </pre>
+    <img src="box method.png"  width="500">   
+    </center>
+      </details>
+
+
+       <!-- Accordion Section 4 -->
+       <details>
+        <summary><h2>CSS Flexbox</h2></summary>
+       <center> <h1 style="color: white;">Introduction to Flexbox</h1>
+        <p style="color: white;">
+            The <b style="color: white;">CSS Flexbox</b> (Flexible Box) layout is a powerful tool for creating flexible and responsive layouts.
+            It allows you to align and distribute space among items in a container, even when their sizes are dynamic
+            or unknown. Flexbox is especially useful for designing layouts that work well on various screen sizes.
+        </p>
+    
+        <h2 style="color: white;">How Flexbox Works</h2>
+        <p style="color: white;">
+            Flexbox uses the concept of a <b style="color: white;">flex container</b> and <b style="color: white;">flex items</b>. 
+            The container is the parent element, and the items are its children. When you apply 
+            <code style="color: white;">display: flex;</code> to a container, its children become flex items that 
+            can be aligned and arranged using Flexbox properties.
+        </p>
+    
+        <h2 style="color: white;">Example: Flexbox Layout</h2>
+        <p style="color: white;">Here is an example of how to use Flexbox:</p>
+    
+        <pre style="background-color: black; color: white; padding: 10px; border: 1px solid white;">
+            <code style="color: white;">
+    &lt;div style="display: flex; justify-content: space-around; align-items: center; height: 100px; background-color: white;"&gt;
+        &lt;div style="width: 50px; height: 50px; background-color: white;"&gt;&lt;/div&gt;
+        &lt;div style="width: 50px; height: 50px; background-color: white;"&gt;&lt;/div&gt;
+        &lt;div style="width: 50px; height: 50px; background-color: white;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+            </code>
+        </pre>
+    
+        <h2 style="color: white;">Explanation of the CSS Code</h2>
+        <p style="color: white;">
+            The CSS properties used in the above example are explained below:
+        </p>
+        <ul style="color: white;">
+            <li>
+                <b><span style="color: white;">display: flex;</span></b> - <span style="color: white;">Turns the container into a flex container.</span>
+            </li>
+            <li>
+                <b><span style="color: white;">justify-content: space-around;</span></b> - <span style="color: white;">Distributes flex items with equal space around them.</span>
+            </li>
+            <li>
+                <b><span style="color: white;">align-items: center;</span></b> - <span style="color: white;">Aligns flex items vertically at the center.</span>
+            </li>
+            <li>
+                <b><span style="color: white;">background-color;</span></b> - <span style="color: white;">Specifies the background color of elements.</span>
+            </li>
+        </ul>
+    
+        <h2 style="color: white;">Why Use Flexbox?</h2>
+        <p style="color: white;">
+            Flexbox makes it easy to create layouts that:
+        </p>
+        <ul style="color: white;">
+            <li style="color: white;">Adapt to different screen sizes</li>
+            <li style="color: white;">Align items horizontally and vertically with minimal effort</li>
+            <li style="color: white;">Handle dynamic content gracefully</li>
+        </ul>
+    
+       </center>
+            </details>
+
+
+
+             <!-- Accordion Section 4 -->
+      <details>
+        <summary><h2>CSS Grid</h2></summary>
+       <center> <h1 style="color: rgb(248, 248, 248); text-align: center;">Understanding CSS Grid</h1>
+        <p style="color: #fffafa;">
+            CSS Grid is a powerful layout system that allows you to create flexible and complex layouts with rows and columns. 
+            It provides a two-dimensional grid-based layout system, which makes it easier to design web pages without using floats or positioning.
+        </p>
+        <p style="color: rgb(255, 252, 252);">
+            Below, we will demonstrate how to create a grid layout with inline styles only. This includes defining rows and columns, 
+            and positioning elements using grid properties like <code>grid-column</code> and <code>grid-row</code>.
+        </p>
+    
+        <h2 style="color: rgb(255, 255, 255);">Example: CSS Grid Layout</h2>
+        <div style="
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            gap: 10px;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+        ">
+            <!-- Row 1 -->
+            <div style="background-color: #f0f0f0; color: black; padding: 20px; text-align: center;">
+                Item 1
+            </div>
+            <div style="background-color: #e0e0e0; color: black; padding: 20px; text-align: center;">
+                Item 2
+            </div>
+            <div style="background-color: #d0d0d0; color: black; padding: 20px; text-align: center;">
+                Item 3
+            </div>
+            <div style="background-color: #c0c0c0; color: black; padding: 20px; text-align: center;">
+                Item 4
+            </div>
+            <!-- Row 2: Spanning Columns -->
+            <div style="background-color: #b0b0b0; color: black; padding: 20px; text-align: center; grid-column: span 2;">
+                Item 5 (Spans 2 Columns)
+            </div>
+            <div style="background-color: #a0a0a0; color: black; padding: 20px; text-align: center;">
+                Item 6
+            </div>
+            <div style="background-color: #909090; color: black; padding: 20px; text-align: center;">
+                Item 7
+            </div>
+            <!-- Row 3: Spanning Rows -->
+            <div style="background-color: #808080; color: black; padding: 20px; text-align: center; grid-row: span 2;">
+                Item 8 (Spans 2 Rows)
+            </div>
+            <div style="background-color: #707070; color: black; padding: 20px; text-align: center;">
+                Item 9
+            </div>
+            <div style="background-color: #606060; color: black; padding: 20px; text-align: center;">
+                Item 10
+            </div>
+            <div style="background-color: #505050; color: black; padding: 20px; text-align: center;">
+                Item 11
+            </div>
+            <!-- Row 4 -->
+            <div style="background-color: #404040; color: rgb(255, 255, 255); padding: 20px; text-align: center;">
+                Item 12
+            </div>
+            <div style="background-color: #303030; color: rgb(241, 236, 236); padding: 20px; text-align: center;">
+                Item 13
+            </div>
+            <div style="background-color: #494545; color: rgb(250, 246, 246); padding: 20px; text-align: center;">
+                Item 14
+            </div>
+        </div>
+    
+        <h2 style="color: rgb(255, 250, 250);">How This Works</h2>
+        <p style="color: rgb(248, 245, 245);">
+            The grid container is created with the <code>display: grid</code> property. Here are the key features of this layout:
+        </p>
+        
+
+          <ul>
+          <li>MATATAPOS KOTO?</li>
+          <li>OR BUHAY KOUNANG MATAPOS?</li>
+          </ul>
+              <b><span style="color: white;">display: flex;</span></b> - <span style="color: white;">Turns the container into a flex container.></span>
+              <b><span style="color: white;">display: flex;</span></b> - <span style="color: white;">   <strong>Grid Columns:</strong> The property <code>grid-template-columns: repeat(4, 1fr)</code> defines four equal columns. </span>
+                <b><span style="color: white;">display: flex;</span></b> - <span style="color: white;">  The <code>1fr</code> means each column takes an equal fraction of the available space.</span>
+            </li>
+            <li>
+              <b><span style="color: white;">display: flex;</span></b> - <span style="color: white;"></span>  <strong>Grid Rows:</strong> The rows adjust automatically to fit their content because we used <code>grid-template-rows: auto</code>.
+            </li>
+            <li>
+              <b><span style="color: white;">display: flex;</span></b> - <span style="color: white;">   <strong>Spacing:</strong> The <code>gap</code> property adds spacing between grid items (in this case, 10px).
+            </li>
+            <li>
+              <b><span style="color: white;">display: flex;</span></b> - <span style="color: white;">      <strong>Spanning:</strong> The <code>grid-column: span 2</code> makes an item span two columns, 
+                <b><span style="color: white;">display: flex;</span></b> - <span style="color: white;">    and <code>grid-row: span 2</code> makes an item span two rows.</span>
+            </li>
+        </ul>
+    
+        <h2 style="color: rgb(253, 248, 248);">Positioning Elements in CSS Grid</h2>
+        <p style="color: rgb(250, 242, 242);">
+            CSS Grid allows precise positioning of elements within the grid. For example:
+        </p>
+        <ul style="color: rgb(255, 255, 255);">
+            <li>
+                Use <code>grid-column-start</code> and <code>grid-column-end</code> to define the start and end positions of an item within the columns.
+            </li>
+            <li>
+                Use <code>grid-row-start</code> and <code>grid-row-end</code> for rows.
+            </li>
+        </ul>
+    
+        <h2 style="color: rgb(247, 240, 240);">CSS Code Example</h2>
+        <p style="color: rgb(248, 246, 246);">Below is the CSS code for the grid layout used in the example:</p>
+        <pre style="background-color: #f4f4f4; padding: 15px; border-radius: 5px; color: black;">
+    /* CSS Grid Layout */
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        padding: 20px;
+        background-color: white;
+        border: 1px solid #ddd;
+    }
+    
+    /* Grid Items */
+    .grid-item {
+        padding: 20px;
+        text-align: center;
+        color: black;
+    }
+    
+    /* Spanning Items */
+    .grid-item-span-2-columns {
+        grid-column: span 2;
+    }
+    
+    .grid-item-span-2-rows {
+        grid-row: span 2;
+    }
+        </pre></center>
+            </details>
+
+             <!-- Accordion Section 4 -->
+             <details>
+              <summary><h2>CSS Image and Button</h2></summary>
+              <center><p>Learn how to add a background image and style buttons with CSS.</p>
+                <button class="btn">Click Me!</button>
+            </div>
+        
+            <h2>CSS Code:</h2>
+            <pre style="color:white;">
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="en"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;title&gt;CSS Tutorial: Background Image &amp; Button&lt;/title&gt;
+            &lt;style&gt;
+                /* 
+                The body of the page is given a background image and text color is set to white. 
+                The background image covers the entire viewport.
+                */
+                body {
+                    background-image: url('background.jpg'); /* Add your image path here */
+                    background-size: cover; /* Make sure the image covers the whole screen */
+                    color: white; /* Set all text to white */
+                    font-family: Arial, sans-serif; /* Set the font to Arial */
+                    margin: 0; /* Remove default margin */
+                    padding: 0; /* Remove default padding */
+                    height: 100vh; /* Ensure the body takes the full height of the viewport */
+                    display: flex; /* Use flexbox for centering content */
+                    justify-content: center; /* Center content horizontally */
+                    align-items: center; /* Center content vertically */
+                    text-align: center; /* Center text alignment */
+                }
+        
+                /* 
+                Styling for the button:
+                - Background color is set to green.
+                - Text color is white.
+                - Padding and font size are set for better appearance.
+                - On hover, the background color of the button changes to a darker green.
+                */
+                .btn {
+                    background-color: #4CAF50; /* Green button */
+                    color: white; /* Text color */
+                    padding: 15px 32px; /* Add padding to the button */
+                    text-align: center; /* Center the text in the button */
+                    text-decoration: none; /* Remove underline from text */
+                    display: inline-block; /* Button is an inline-block element */
+                    font-size: 16px; /* Set the font size */
+                    margin: 4px 2px; /* Margin for spacing between buttons */
+                    cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+                    border: none; /* Remove default border */
+                    border-radius: 4px; /* Rounded corners */
+                    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+                }
+        
+                /* 
+                The hover effect changes the button background to a darker shade of green when the mouse hovers over it.
+                */
+                .btn:hover {
+                    background-color: #45a049; /* Darken on hover */
+                }
+            &lt;/style&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div&gt;
+                &lt;h1&gt;Welcome to the CSS Tutorial!&lt;/h1&gt;
+                &lt;p&gt;Learn how to add a background image and style buttons with CSS.&lt;/p&gt;
+                &lt;button class="btn"&gt;Click Me!&lt;/button&gt;
+            &lt;/div&gt;
+        
+            &lt;h2&gt;CSS Code Explanation:&lt;/h2&gt;
+            &lt;ul style="color:white;"&gt;
+                &lt;li&gt;&lt;strong&gt;Background Image&lt;/strong&gt;: This sets an image as the background for the page, using the 'background-image' property. </br>
+                The 'background-size: cover' ensures the image covers the entire screen area.&lt;/li&gt;</br>
+                &lt;li&gt;&lt;strong&gt;Text Color&lt;/strong&gt;:
+            </br> We set the text color to white using 'color: white;' so that all text in the page appears white.&lt;/li&gt;</br>
+                &lt;li&gt;&lt;strong&gt;Button Styling&lt;/strong&gt;: The button has a green background, white text, and rounded corners. </br>
+                The 'cursor: pointer' makes the mouse pointer change when hovering over the button. The 'transition' makes the hover effect smooth.&lt;/li&gt;</pre>
+              
+            </pre></center>
+                  </details>
+
+  <!-- Accordion Section 4 -->
+  <details>
+    <summary><h2>CSS comments</h2></summary>
+     <center>&lt;!-- Explanation of the Comments in CSS --&gt;
+      &lt;ul&gt;
+          &lt;li&gt;&lt;strong&gt;Single-line Comment:&lt;/strong&gt; Use &lt;code&gt;&#47;* ... *&#47;&lt;/code&gt; on a single line to explain a rule or property.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Multi-line Comment:&lt;/strong&gt; Use &lt;code&gt;&#47;*&lt;/code&gt; and &lt;code&gt;*&#47;&lt;/code&gt; to wrap multiple lines of text. This is helpful for longer explanations.&lt;/li&gt;
+          &lt;li&gt;&lt;strong&gt;Inline Comment:&lt;/strong&gt; You can place comments next to a CSS property to describe what it does.&lt;/li&gt;
+      &lt;/ul&gt;
+          </pre>
+      
+          <h2>Why Use Comments?</h2>
+          <pre>
+      &lt;!-- Benefits of Using CSS Comments --&gt;
+      &lt;ul&gt;
+          &lt;li&gt;Improve code readability and maintainability.&lt;/li&gt;
+          &lt;li&gt;Explain complex logic or styling decisions.&lt;/li&gt;
+          &lt;li&gt;Temporarily disable parts of the code without deleting them.&lt;/li&gt;
+      &lt;/ul&gt;
+          <center> <h1>CSS Tutorial: How to Write Comments</h1>
+            <p>CSS comments are used to add explanations or notes in your CSS code. Comments help in understanding and maintaining the code. They do not affect how the browser renders the webpage.</p>
+        
+            <h2>CSS Syntax for Comments</h2>
+            <p>CSS comments start with <code>&amp;#47;*</code> and end with <code>*&amp;#47;</code>. Any text between these symbols will be ignored by the browser.</p>
+        
+            <h3>Example:</h3>
+            <pre>
+        &lt;style&gt;
+        &amp;#47;* This is a single-line comment *&amp;#47;
+        
+        /*
+        &amp;#47;* This is a multi-line comment. *&amp;#47;
+        It can span multiple lines
+        and is useful for adding detailed explanations.
+        */
+        
+        p {
+            color: white; &amp;#47;* This comment explains that text color is white *&amp;#47;
+            font-size: 16px; &amp;#47;* Set the font size to 16px *&amp;#47;
+        }
+        &lt;/style&gt;
+            </pre>
+        
+            <h2>Explanation:</h2>
+            <pre>
+        &lt;ul&gt;
+            &lt;li&gt;&lt;strong&gt;Single-line Comment:&lt;/strong&gt; Use &amp;#47;* ... *&amp;#47; for brief notes on a single line.&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Multi-line Comment:&lt;/strong&gt; Use &amp;#47;* and *&amp;#47; to wrap multiple lines. Helpful for detailed explanations.&lt;/li&gt;
+            &lt;li&gt;&lt;strong&gt;Inline Comment:&lt;/strong&gt; Place comments next to a CSS property to describe its purpose.&lt;/li&gt;
+        &lt;/ul&gt;
+            </pre>
+        
+            <h2>Why Use Comments?</h2>
+            <pre>
+        &lt;ul&gt;
+            &lt;li&gt;Improve code readability and maintainability.&lt;/li&gt;
+            &lt;li&gt;Explain complex logic or styling decisions.&lt;/li&gt;
+            &lt;li&gt;Temporarily disable sections of code without deleting them.&lt;/li&gt;
+        &lt;/ul&gt;
+            </pre>
+        </body></center>
+        </details>
+        <center>
+          <table>
+            <table border = "1">
+            <tr>
+            
+              <th> Main Site</video></th>
+              <th>Youtube</th>
+            </tr>
+            <tr>
+            <td> <a href="https://www.w3schools.com/css/default.asp">
+                <img src="w3.png"  style="width:250px;height:300px;">
+             </a></td>
+            <td>  <a href="https://www.youtube.com/watch?v=AGDDdsiZ0Ko">
+                <img src="YT.png"  style="width:250px;height:300px;">
+             </a></td>
+            
+            </tr>
+            </table>
+        
+        </center>
+        
+
+ 
+
+    </div>
+  </body>
+</html>

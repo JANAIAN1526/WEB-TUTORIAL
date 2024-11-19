@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Tutorial</title>
+    
+    <style>
+      /* General styles */
+      body {
+        background-color: rgb(238, 232, 232);
+        color: rgb(0, 0, 0);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #0a0a0a;
+        color: white;
+        text-align: center;
+        padding: 40px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+        
+      }
+
+      .content {
+        padding-top: 150px; /* Avoid overlap with header */
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      /* Accordion styles */
+      details {
+        margin-bottom: 10px;
+        background-color: #333; /* Dark gray for accordion sections */
+        border: 1px solid #444;
+        border-radius: 5px;
+        padding: 10px;
+      }
+
+      details summary h2 {
+        display: inline;
+        font-size: 1.25em;
+        margin: 0;
+      }
+
+      details p {
+        margin: 10px 0;
+      }
+
+      h1,
+      h2 {
+        color: #fcfc0f; /* Highlight headers with green */
+      }
+
+      .p {
+        color: rgb(7, 7, 7);
+      }
+      ul,
+      li {
+        line-height: 1.6;
+      }
+
+      hr {
+        border: 0;
+        border-top: 1px solid #555;
+        margin: 20px 0;
+      }
+      /* Target unordered list and its list items */
+      ul,
+      li {
+        color: rgb(216, 172, 172);
+        line-height: 1.6;
+      }
+
+      /* Target paragraph inside details */
+      details p {
+        color: white;
+      }
+
+      /* General text styling for body below header */
+      .content,
+      .content * {
+        color: rgb(14, 13, 13);
+        font-size: 30px;
+      }
+
+      .content2,
+      .content2 * {
+        color: rgb(14, 13, 13);
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    
+    <header>
+      <h1>JavaScript</h1>
+      <a href="index.html" class="home-button">
+        <img src="homie.png"  width="50" height="50">
+    </a>
+    </header>
+
+    <!-- Main Content -->
+    <div class="content">
+      <h2>What is JavaScript</h2>
+    </div>
+  
+      JavaScript is the world's most popular programming language.<br>
+      JavaScript is the programming language of the Web.<br>
+     JavaScript is easy to learn.
+   
+    <hr />
+
+    <div class="content2">
+      <h1>Learn JavaScript!</h1></div>
+
+      <!-- Accordion Section 1 -->
+      <details>
+        <summary><h2>Introduction to JS</h2></summary>
+        <center><h1>Introduction to JavaScript</h1>
+
+    <p>
+        What is JavaScript?
+        <br>
+        JavaScript is a programming language that adds interactivity to web pages. 
+        It allows you to create dynamic, responsive, and engaging user experiences. 
+    </p>
+
+    <p>
+        Why is JavaScript Important?
+        <br>
+        JavaScript is essential for modern web development. It's used to:
+        <ul>
+            <li>Create interactive elements like buttons, sliders, and menus</li>
+            <li>Handle user input and events</li>
+            <li>Animate elements on the page</li>
+            <li>Fetch and display data from servers</li>
+            <li>Build complex web applications</li>
+        </ul>
+    </p>
+
+    <h2>
+        JavaScript vs. HTML vs. CSS</h2>
+        <br>
+      <p> While HTML, CSS, and JavaScript are often used together, they have distinct roles:
+        <ul>
+            <li>HTML defines the structureof a webpage.</li>
+            <li>CSS styles the appearance of a webpage.</li>
+            <li>JavaScript adds interactivity and behavior to a webpage.</li>
+        </ul>
+    </p>
+
+    <h2>
+        Modern JavaScript Applications</h2>
+        <br>
+        <p>JavaScript has evolved significantly, powering a wide range of applications:
+        <ul>
+            <li>Web Applications:Single-page applications (SPAs) and multi-page applications (MPAs)</li>
+            <li>Game Development:Creating interactive games for web and mobile platforms</li>
+            <li>Server-Side Development:Node.js for building server-side applications</li>
+            <li>Mobile App Development:Frameworks like React Native and Ionic for building cross-platform apps</li>
+            <li>Desktop App Development: Electron for building desktop applications using web technologies</li>
+        </ul>
+    </p>
+  </center>
+      </details>
+
+      <!-- Accordion Section 2 -->
+      <details>
+        <summary><h2>Setting up Environment</h2></summary>
+<center>
+        <h1>Setting Up the Development Environment</h1>
+
+        <h2>1. Installing a Text Editor (e.g., VS Code)</h2>
+        <p>
+            A text editor is essential for writing and editing your code. 
+            <strong>Visual Studio Code (VS Code)</strong> is a popular choice among developers due to its user-friendly interface, 
+            built-in terminal, and extensive extensions. To install it:
+        </p>
+        <ol>
+            <li>Visit the <a href="https://code.visualstudio.com/" target="_blank" style="color: #ffcc00;">VS Code website</a>.</li>
+            <li>Download the installer for your operating system (Windows, macOS, or Linux).</li>
+            <li>Run the installer and follow the on-screen instructions to complete the installation.</li>
+        </ol>
+    
+        <h2>2. Setting Up a Basic HTML File to Include JavaScript</h2>
+        <p>
+            Once you have installed your text editor, create a new file with the extension <strong>.html</strong>. 
+            This file will contain your HTML code, and you can also include JavaScript within it. 
+            Here is a simple example of what your HTML file might look like:
+        </p>
+        <pre>
+            <code>
+            &lt;!DOCTYPE html&gt;
+            &lt;html lang="en"&gt;
+            &lt;head&gt;
+                &lt;meta charset="UTF-8"&gt;
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                &lt;title&gt;My First HTML Page&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Hello, World!&lt;/h1&gt;
+                &lt;script&gt;
+                    console.log('Hello from JavaScript!');
+                &lt;/script&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+            </code>
+        </pre>
+    
+        <h2>3. Introduction to Browser Developer Tools</h2>
+        <p>
+            Developer tools are built into modern web browsers and allow you to inspect and debug your HTML, CSS, and JavaScript. 
+            To access these tools, right-click on any webpage and select <strong>Inspect</strong> or press <strong>F12</strong> on your keyboard.
+            Here are some key features:
+        </p>
+        <ul>
+            <li><strong>Elements Tab:</strong> View and edit the HTML and CSS of a webpage in real-time.</li>
+            <li><strong>Console Tab:</strong> View messages logged by JavaScript and run JavaScript commands directly.</li>
+            <li><strong>Network Tab:</strong> Monitor network requests and responses, which is useful for debugging API calls.</li>
+        </ul>      </details>
+      </center>
+      <!-- Accordion Section 3 -->
+      <details>
+        <summary><h2>
+          JS Syntax and Basics</h2></summary>
+          <h1>JavaScript Syntax and Basics</h1>
+<center>    <h2>1. Variables</h2>
+          <p>
+              In JavaScript, variables are used to store data values. You can declare variables using three keywords: 
+              <strong>var</strong>, <strong>let</strong>, and <strong>const</strong>.
+          </p>
+          <ul>
+              <li>
+                  <strong>var:</strong> This keyword declares a variable that is function-scoped or globally-scoped. 
+                  It can be re-assigned and re-declared.
+                  <pre><code>var name = &quot;Alice&quot;;</code></pre>
+              </li>
+              <li>
+                  <strong>let:</strong> This keyword declares a block-scoped variable. It can be re-assigned but not re-declared 
+                  in the same scope.
+                  <pre><code>let age = 30;</code></pre>
+              </li>
+              <li>
+                  <strong>const:</strong> This keyword declares a block-scoped variable that cannot be re-assigned. 
+                  It must be initialized at the time of declaration.
+                  <pre><code>const pi = 3.14;</code></pre>
+              </li>
+          </ul>
+      
+          <h2>2. Data Types</h2>
+          <p>
+              JavaScript has several data types that can be categorized into two groups: 
+              <strong>Primitive</strong> and <strong>Reference</strong> types.
+          </p>
+          <h3>Primitive Data Types:</h3>
+          <ul>
+              <li>
+                  <strong>String:</strong> Represents a sequence of characters.
+                  <pre><code>let greeting = &quot;Hello, World!&quot;;</code></pre>
+              </li>
+              <li>
+                  <strong>Number:</strong> Represents both integer and floating-point numbers.
+                  <pre><code>let count = 42;</code></pre>
+              </li>
+              <li>
+                  <strong>Boolean:</strong> Represents a logical entity and can have two values: true or false.
+                  <pre><code>let isActive = true;</code></pre>
+              </li>
+              <li>
+                  <strong>null:</strong> Represents an intentional absence of any value.
+                  <pre><code>let emptyValue = null;</code></pre>
+              </li>
+              <li>
+                  <strong>undefined:</strong> Indicates a variable that has been declared but has not yet been assigned a value.
+                  <pre><code>let notAssigned;</code></pre>
+              </li>
+          </ul>
+      
+          <h2>3. Comments and Semicolons</h2>
+          <p>
+              Comments are used to explain code and are ignored by the JavaScript engine. There are two types of comments:
+          </p>
+          <ul>
+              <li>
+                  <strong>Single-line comments:</strong> Start with two forward slashes (//).
+                  <pre><code>// This is a single-line comment</code></pre>
+              </li>
+              <li>
+                  <strong>Multi-line comments:</strong> Enclosed between /* and */.
+                  <pre><code>/* This is a multi-line comment */</code></pre>
+              </li>
+          </ul>
+          <p>
+              In JavaScript, it is a good practice to end statements with a semicolon (;) to avoid potential issues, 
+              although it is not strictly required in all cases.
+          </p>
+        </center>      
+      </details>
+
+ <!-- Accordion Section 4 -->
+      <details>
+  <summary><h2>JavaScript operators </h2></summary>
+  <center><h2>Arithmetic Operators</h2>
+  <p>Arithmetic operators are used to perform mathematical operations on numerical values.</p>
+  <table>
+      <tr>
+          <th>Operator</th>
+          <th>Description</th>
+          <th>Example</th>
+      </tr>
+      <tr>
+          <td>+</td>
+          <td>Addition</td>
+          <td><code>let sum = 5 + 3;</code></td>
+      </tr>
+      <tr>
+          <td>-</td>
+          <td>Subtraction</td>
+          <td><code>let difference = 10 - 4;</code></td>
+      </tr>
+      <tr>
+          <td>*</td>
+          <td>Multiplication</td>
+          <td><code>let product = 2 * 6;</code></td>
+      </tr>
+      <tr>
+          <td>/</td>
+          <td>Division</td>
+          <td><code>let quotient = 15 / 3;</code></td>
+      </tr>
+      <tr>
+          <td>%</td>
+          <td>Modulus (Remainder)</td>
+          <td><code>let remainder = 17 % 5;</code></td>
+      </tr>
+  </table>
+
+  <h2>Comparison Operators</h2>
+  <p>Comparison operators are used to compare two values and return a boolean value (true or false).</p>
+  <table>
+      <tr>
+          <th>Operator</th>
+          <th>Description</th>
+          <th>Example</th>
+      </tr>
+      <tr>
+          <td>==</td>
+          <td>Equal to</td>
+          <td><code>let isEqual = 5 == 5;</code></td>
+      </tr>
+      <tr>
+          <td>!=</td>
+          <td>Not equal to</td>
+          <td><code>let isNotEqual = 3 != 7;</code></td>
+      </tr>
+      <tr>
+          <td>></td>
+          <td>Greater than</td>
+          <td><code>let isGreaterThan = 10 > 8;</code></td>
+      </tr>
+      <tr>
+          <td><</td>
+          <td>Less than</td>
+          <td><code>let isLessThan = 2 < 9;</code></td>
+      </tr>
+      <tr>
+          <td>>=</td>
+          <td>Greater than or equal to</td>
+          <td><code>let isGreaterOrEqual = 6 >= 6;</code></td>
+      </tr>
+      <tr>
+          <td><=</td>
+          <td>Less than or equal to</td>
+          <td><code>let isLessOrEqual = 4 <= 4;</code></td>
+      </tr>
+  </table>
+
+  <h2>Logical Operators</h2>
+  <p>Logical operators are used to combine multiple conditions and return a boolean value.</p>
+  <table>
+      <tr>
+          <th>Operator</th>
+          <th>Description</th>
+          <th>Example</th>
+      </tr>
+      <tr>
+          <td>&&</td>
+          <td>AND (both conditions must be true)</td>
+          <td><code>let isTrue = (5 > 3) && (2 < 4);</code></td>
+      </tr>
+      <tr>
+          <td>||</td>
+          <td>OR (at least one condition must be true)</td>
+          <td><code>let isTrue = (10 == 10) || (7 > 12);</code></td>
+      </tr>
+      <tr>
+          <td>!</td>
+          <td>NOT (reverses the logical state)</td>
+          <td><code>let isFalse = !(true);</code></td>
+      </tr>
+  </table>
+
+  <h2>Assignment Operators</h2>
+  <p>Assignment operators are used to assign values to variables.</p>
+  <table>
+      <tr>
+          <th>Operator</th>
+          <th>Description</th>
+          <th>Example</th>
+      </tr>
+      <tr>
+          <td>=</td>
+          <td>Assigns   
+a value</td>
+          <td><code>let x = 10;</code></td>
+      </tr>
+      <tr>
+          <td>+=</td>
+          <td>Adds a value and assigns</td>
+          <td><code>x += 5; // x = 15</code></td>
+      </tr>
+      <tr>
+          <td>-=</td>
+          <td>Subtracts a value and assigns</td>
+          <td><code>x -= 2; // x = 13</code></td>
+      </tr>
+      <tr>
+          <td>*=</td>
+          <td>Multiplies a value and assigns</td>
+          <td><code>x *= 3; // x = 39</code></td>
+      </tr>
+      <tr>
+          <td>/=</td>
+          <td>Divides a value and assigns</td>
+          <td><code>x /= 3; // x = 13</code></td>
+      </tr>
+      <tr>
+          <td>%=</td>
+          <td>Calculates the modulus and assigns</td>
+          <td><code>x %= 4; // x = 1</code></td>
+      </tr>
+  </table>
+
+  <h2>Combining Operators in Expressions</h2>
+  <p>You can combine multiple operators in a single expression to create complex calculations. Remember to consider the order of operations.</p>
+  <p>Example:</p>
+  <code style="display: block; margin: 0 auto;">let result = (10 + 5) * 2 - 3; // Output: 27</code>
+</center>
+
+      </details>
+
+
+       <!-- Accordion Section 4 -->
+       <details>
+        <summary><h2>Control Structures</h2></summary>
+        <center>   <h2>Conditional Statements</h2>
+    <p>Conditional statements allow you to execute different code blocks based on certain conditions.</p>
+
+    <h3>if Statement</h3>
+    <p>The `if` statement executes a code block if a specified condition is true.</p>
+    <code style="display: block; margin: 0 auto;">if (condition) {
+        // Code to be executed if the condition is true
+    }</code>
+
+    <h3>if-else Statement</h3>
+    <p>The `if-else` statement executes one code block if a condition is true, and another code block if the condition is false.</p>
+    <code style="display: block; margin: 0 auto;">if (condition) {
+        // Code to be executed if the condition is true
+    } else {
+        // Code to be executed if the condition is false
+    }</code>
+
+    <h3>if-else if-else Statement</h3>
+    <p>The `if-else if-else` statement allows you to check multiple conditions and execute different code blocks based on the first true condition.</p>
+    <code style="display: block; margin: 0 auto;">if (condition1) {
+        // Code to be executed if condition1 is true
+    } else if (condition2) {
+        // Code to be executed if condition1 is false and condition2 is true
+    } else {
+        // Code to be executed if both conditions   
+ are false
+    }</code>   
+
+
+    <h3>switch Statement</h3>
+    <p>The `switch` statement allows you to execute different code blocks based on the value of an expression.</p>
+    <code style="display: block; margin: 0 auto;">switch (expression) {
+        case value1:
+            // Code to be executed if expression equals value1
+            break;
+        case value2:
+            // Code to be executed if expression equals value2
+            break;   
+
+        // ... more cases
+        default:
+            // Code to be executed if   
+ no case matches
+    }</code>
+
+    <h2>Loops</h2>
+    <p>Loops allow you to execute a block of code repeatedly.</p>
+
+    <h3>for Loop</h3>
+    <p>The `for` loop is used to execute a block of code a specific number of times.</p>
+    <code style="display: block; margin: 0 auto;">for (initialization; condition; increment/decrement) {
+        // Code to be executed
+    }</code>
+
+    <h3>while Loop</h3>
+    <p>The `while` loop executes a block of code as long as a specified condition is true.</p>
+    <code style="display: block; margin: 0 auto;">while (condition) {
+        // Code to be executed
+    }</code>
+
+    <h3>do-while Loop</h3>
+    <p>The `do-while` loop executes a block of code at least once, and then continues to execute as long as a specified condition is true.</p>
+    <code style="display: block; margin: 0 auto;">do {
+        // Code to be executed
+    } while (condition);</code>
+
+    <h2>Breaking and Continuing Loops</h2>
+    <p>You can use the `break` and `continue` statements to control the flow of loops.</p>
+
+    <h3>break Statement</h3>
+    <p>The `break` statement immediately terminates the loop.</p>
+    <code style="display: block; margin: 0 auto;">for (let i = 0; i < 10; i++) {
+        if (i === 5) {
+            break; // Exit the loop when i reaches 5
+        }
+        console.log(i);
+    }</code>
+
+    <h3>continue Statement</h3>
+    <p>The `continue` statement skips the current iteration of the loop and moves to the next iteration.</p>
+    <code style="display: block; margin: 0 auto;">for (let i = 0; i < 10; i++) {
+        if (i % 2 === 0) {
+            continue; // Skip even numbers
+        }
+        console.log(i);
+    }</code>
+            </details>
+
+
+
+             <!-- Accordion Section 4 -->
+      <details>
+        <summary><h2>JS functions</h2></summary>
+       <center> <h2>Functions</h2>
+        <p>Functions are blocks of reusable code that perform specific tasks.</p>
+    
+        <h3>Defining a Function</h3>
+        <p>To define a function, you use the `function` keyword followed by the function name, parentheses for parameters, and curly braces for the function body.</p>
+        <code style="display: block; margin: 0 auto;">function functionName(parameter1, parameter2, ...) {
+            // Function body
+        }</code>
+    
+        <h3>Calling a Function</h3>
+        <p>To call a function, you simply write the function name followed by parentheses, passing any necessary arguments.</p>
+        <code style="display: block; margin: 0 auto;">functionName(argument1, argument2, ...);</code>
+    
+        <h3>Function Parameters and Return Values</h3>
+        <p>Functions can take parameters, which are values passed to the function when it's called. They can also return values using the `return` statement.</p>
+        <code style="display: block; margin: 0 auto;">function greet(name) {
+            console.log("Hello, " + name + "!");
+        }
+    
+        function add(x, y) {
+            return x + y;
+        }
+    
+        greet("Alice");
+        let sum = add(5, 3);
+        console.log("Sum:", sum);</code>
+    
+        <h3>Arrow Functions</h3>
+        <p>Arrow functions provide a concise syntax for defining functions, especially for short functions.</p>
+        <code style="display: block; margin: 0 auto;">const square = (x) => {
+            return x * x;
+        };
+    
+        // Concise syntax for single-line functions
+        const double = x => x * 2;</code>
+    
+        <p>Arrow functions are often used with higher-order functions like `map`, `filter`, and `reduce`.</p>
+        <code style="display: block; margin: 0 auto;">const numbers = [1, 2, 3, 4, 5];
+        const doubledNumbers = numbers.map(number => number * 2);
+        console.log(doubledNumbers);</code>
+        </center>
+            </details>
+
+             <!-- Accordion Section 4 -->
+             <details>
+              <summary><h2>Object and Arrays</h2></summary>
+              <h2>Objects</h2>
+              <p>Objects are used to store collections of key-value pairs.</p>
+          
+              <h3>Creating an Object</h3>
+              <code style="display: block; margin: 0 auto;">let person = {
+                  firstName: "John",
+                  lastName: "Doe",
+                  age: 30,
+                  city: "New York"
+              };</code>
+          
+              <h3>Accessing Object Properties</h3>
+              <code style="display: block; margin: 0 auto;">console.log(person.firstName); // Output: John
+              console.log(person["lastName"]); // Output: Doe</code>
+          
+              <h3>Adding and Removing Properties</h3>
+              <code style="display: block; margin: 0 auto;">person.email = "johndoe@example.com"; // Add a property
+              delete person.city; // Remove a property</code>
+          
+              <h2>Arrays</h2>
+              <p>Arrays are used to store collections of values.</p>
+          
+              <h3>Creating an Array</h3>
+              <code style="display: block; margin: 0 auto;">let numbers = [1, 2, 3, 4, 5];
+              let fruits = ["apple", "banana", "orange"];</code>
+          
+              <h3>Accessing Array Elements</h3>
+              <code style="display: block; margin: 0 auto;">console.log(numbers[0]); // Output: 1
+              console.log(fruits[2]); // Output: orange</code>
+          
+              <h3>Array Methods</h3>
+              <p>Arrays provide various methods for manipulating their elements.</p>
+              <ul>
+                  <li>push(): Adds elements to the end of an array.</li>
+                  <li>pop():Removes the last element from an array.</li>
+                  <li>map(): Creates a new array by transforming each element of the original array.</li>
+                  <li>filter(): Creates a new array with elements that meet a certain condition.</li>
+              </ul>
+              <code style="display: block; margin: 0 auto;">numbers.push(6); // Add 6 to the end
+              numbers.pop(); // Remove the last element
+          
+              let doubledNumbers = numbers.map(number => number * 2);
+              let evenNumbers = numbers.filter(number => number % 2 === 0);</code>
+          
+              <h2>Object Methods and Iteration</h2>
+              <p>Objects can have methods, which are functions associated with the object.</p>
+              <code style="display: block; margin: 0 auto;">let person = {
+                  firstName: "John",
+                  lastName: "Doe",
+                  fullName: function() {
+                      return this.firstName + " " + this.lastName;
+                  }
+              };
+          
+              console.log(person.fullName());</code>   
+          
+          
+              <p>You can iterate over object properties using a `for...in` loop.</p>
+              <code style="display: block; margin: 0 auto;">for (let property in person) {
+                  console.log(property + ": " + person[property]);
+              }</code>
+          
+                  </details>
+
+
+
+                  <center>
+                    <table>
+                      <table border = "1">
+                      <tr>
+                      
+                        <th> Main Site</video></th>
+                        <th>Youtube</th>
+                      </tr>
+                      <tr>
+                      <td> <a href="https://www.w3schools.com/js/default.asp">
+                          <img src="w3.png"  style="width:250px;height:300px;">
+                       </a></td>
+                      <td>  <a href="https://www.youtube.com/watch?v=uSgcWDkwc3U">
+                          <img src="YT.png"  style="width:250px;height:300px;">
+                       </a></td>
+                      
+                      </tr>
+                      </table>
+                  
+                  </center>
+
+
+
+
+
+
+
+    </div>
+  </body>
+</html>
